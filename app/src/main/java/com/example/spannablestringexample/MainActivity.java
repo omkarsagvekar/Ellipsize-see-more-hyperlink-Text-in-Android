@@ -33,10 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
                     String moreString = getApplicationContext().getString(R.string.more);
                     String suffix = TWO_SPACES + moreString;
-//
 //                    // 3 is a "magic number" but it's just basically the length of the ellipsis we're going to insert
                     String actionDisplayText = myReallyLongText.substring(0, lastCharShown - suffix.length() - 3) + "..." + suffix;
-//
                     SpannableString truncatedSpannableString = new SpannableString(actionDisplayText);
                     int startIndex = actionDisplayText.indexOf(moreString);
 //                    truncatedSpannableString.setSpan(new ForegroundColorSpan(getApplicationContext().getColor(android.R.color.black)), startIndex, startIndex + moreString.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
