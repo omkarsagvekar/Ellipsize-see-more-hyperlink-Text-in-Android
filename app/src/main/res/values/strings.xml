@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SpannableStringExample</string>
+    <string name="more"><u>see more</u></string>
+</resources>
