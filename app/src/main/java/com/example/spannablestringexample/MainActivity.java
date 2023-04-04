@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 if (tvLines.getLineCount() > MAX_LINES) {
                     int lastCharShown = tvLines.getLayout().getLineVisibleEnd(MAX_LINES - 1);
-
                     tvLines.setMaxLines(MAX_LINES);
 
                     String moreString = getApplicationContext().getString(R.string.more);
@@ -40,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
 //                    truncatedSpannableString.setSpan(new ForegroundColorSpan(getApplicationContext().getColor(android.R.color.black)), startIndex, startIndex + moreString.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
                     truncatedSpannableString.setSpan(new UnderlineSpan(), startIndex, startIndex + moreString.length(), 0);
                     tvLines.setText(truncatedSpannableString);
-
                 }
             }
         });
